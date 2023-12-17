@@ -1,35 +1,54 @@
-#app{
-    margin:0 auto;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap ;
-
+body {
+  background-color: #eeeeee;
 }
 
-.form-layout {
-    width:350px;
-    padding: 15px;
-    margin: 30px 0;
-    border-radius: 15px;
-    background-color: #eee ;
+#form-layout {
+  margin: 30px auto;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 15px;
 }
 
-.form-layout .form-title {
+.form-title {
+  width: 100%;
+}
+
+.form-title .title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.avatar {
+  width: auto;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#form-layout form {
+    margin: 10px 15px;
+    width: 350px;
+}
+
+#form-layout form button {
     width: 100%;
+}
+
+#form-layout .other-link {
     text-align: center;
-    font-size: 30px;
-}
-.form-layout .pic {
-    width:200px;
-    height : 200px;
-    object-fit: cover;
 }
 
-.form-layout .input-fields  {
-    margin:15px  0;
-
-}
-
-.form-layout button  {
-    width:100%
+#other-link {
+  text-decoration: underline;
+  color: blue;
 }
